@@ -36,5 +36,13 @@ def in_order_traversal(self):
 
     return elements
 
+def build_tree(elements):
+    root = BinarySearchTreeNode(elements[0])
+
+    for i in range(1, len(elements)):
+        root.add_child(elements[i])
+
+    return root
+
 if __name__ == '__main__':
     letters = ["M", "A", "R", "K", "J", "O", "H", "N", "M", "R", "A", "Y", "M", "U", "N", "D", "O"]
