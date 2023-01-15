@@ -35,3 +35,6 @@ def in_order_traversal(self):
         elements += self.right.in_order_traversal()
 
     return elements
+
+if __name__ == '__main__':
+    letters = ["M", "A", "R", "K", "J", "O", "H", "N", "M", "R", "A", "Y", "M", "U", "N", "D", "O"]
