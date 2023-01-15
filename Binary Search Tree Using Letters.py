@@ -84,6 +84,7 @@ class BinarySearchTreeNode:
         return self
 
 def build_tree(elements):
+    print("Building tree with these elements:", elements)
     root = BinarySearchTreeNode(elements[0])
 
     for i in range(1, len(elements)):
@@ -96,3 +97,7 @@ if __name__ == '__main__':
     letters_tree = build_tree(letters)
     print(letters_tree.in_order_traversal())
     print(letters_tree.search("K"))
+    
+    letter_to_delete = input("Enter the letter you want to delete: " )
+    letters_tree.delete(letter_to_delete)
+    print("After deleting " + letter_to_delete, letters_tree.in_order_traversal())
